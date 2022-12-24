@@ -6,7 +6,8 @@ body {
 
 .body__container {
   position: relative;
-  width: 900px;
+  width: 100%;
+  max-width: 900px;
   margin: 0 auto;
 }
 
@@ -22,7 +23,7 @@ body {
 #header {
   position: fixed;
   /* =========================== */
-  /* header__container 클래스에 absolute 키워드로 부모로 부터 기준을 잡고, 자식인 header 태그를 고정(fixed) 한다.  */
+  /* header__container 클래스에 absolute 키워드로 부모로 부터 기준을 잡고 width 값을 제한한다. 자식인 header 요소는 부모를 기준으로 생성되기 때문에 부모 값 내에서 고정(fixed) 된다.  */
   width: 100%;
   max-width: 900px;
   /* =========================== */

@@ -5,7 +5,8 @@ body {
 }
 
 .body__container {
-  width: 900px;
+  width: 100%;
+  max-width: 900px;
   margin: 0 auto;
 }
 
@@ -14,6 +15,7 @@ body {
   /* =========================== */
   /* width 속성에 inherit 키워드를 사용해서 부모 요소로부터 해당 속성의 계산값을 받아 사용한다. */
   width: inherit;
+  max-width: inherit;
   /* =========================== */
   height: 80px;
   display: flex;
