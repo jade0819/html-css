@@ -1,0 +1,54 @@
+html,
+body {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.body__container {
+  width: 900px;
+  margin: 0 auto;
+}
+
+#header {
+  position: fixed;
+  /* =========================== */
+  /* width 속성에 inherit 키워드를 사용해서 부모 요소로부터 해당 속성의 계산값을 받아 사용한다. */
+  width: inherit;
+  /* =========================== */
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+}
+
+#header>a {
+  padding: 8px 14px;
+  color: white;
+}
+
+ul {
+  display: flex;
+  color: white;
+  list-style: none;
+}
+
+li {
+  padding: 12px 18px;
+}
+
+section {
+  width: 100%;
+  height: 500px;
+  border: 1px solid black;
+}
+
+#footer {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: black;
+}

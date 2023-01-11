@@ -1,0 +1,39 @@
+<!-- pixed 속성은 부모 요소의 width 값을 기준으로 하는 것이 아닌, viewport 기준이다.
+  그렇기 때문에 부모 요소의 width 값에 900px을 주어도 pixed 속성이 지정된 header 태그의 width는 900px이 아닌 viewport 기준 100%가 된다.
+  이 것을 해결하기 위한 방법2 (방법1이 안 먹힐 때) -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- 해결 방법2 -->
+    <link href="./index2.css" rel="stylesheet" type="text/css" />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="body__container">
+      <div class="header__container">
+        <header id="header">
+          <a href=""><img src="" alt="" />Logo</a>
+          <ul>
+            <li>메뉴1</li>
+            <li>메뉴2</li>
+            <li>메뉴3</li>
+            <li>메뉴4</li>
+          </ul>
+        </header>
+      </div>
+      <div>
+        <section class="menu1">Section1</section>
+        <section class="menu2">Section2</section>
+        <section class="menu3">Section3</section>
+        <section class="menu4">Section4</section>
+      </div>
+      <footer id="footer">푸터</footer>
+    </div>
+  </body>
+</html>
