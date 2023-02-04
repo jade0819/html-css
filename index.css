@@ -10,10 +10,11 @@
   --color-grey: #616161;
   --color-light-grey: #7c7979;
   --color-sky-blue: #73aace;
-  --color-blue: #1b48ab;
   --color-light-blue: #5c73dd;
+  --color-blue: #1b48ab;
   --color-dark-blue: #00227b;
-  --color-deep-dark-blue: #002171;
+  /* --color-dark-blue: #012ca1; */
+  --color-deep-blue: #002171;
   --color-yellow: #fff7d1;
   --color-orange: #feb546;
   --color-black: #000000;
@@ -40,6 +41,11 @@
 /* Universal tags */
 * {
   box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
 }
 
 body {
@@ -74,11 +80,25 @@ button {
   align-items: center;
   justify-content: center;
   color: var(--color-white);
-  background-color: var(--color-blue);
+  background-color: var(--color-dark-blue);
+}
+
+.index__wrap {
+  position: relative;
+  min-height: 100%;
+}
+
+.index__content {
+  width: 100%;
+  height: 100%;
+  padding-bottom: 60px;
+  background-color: var(--color-dark-pink);
 }
 
 .index__footer {
+  position: absolute;
+  bottom: 0;
   width: 100%;
   height: 60px;
-  background-color: var(--color-blue);
+  background-color: var(--color-dark-blue);
 }
