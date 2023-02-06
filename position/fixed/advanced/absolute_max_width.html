@@ -1,4 +1,4 @@
-<!-- 헤더 고정 -->
+<!-- 화면 하단 오른쪽 고정 -->
 
 <!-- pixed 속성은 부모 요소의 width 값을 기준으로 하는 것이 아닌, viewport 기준이다. -->
 <!-- 그렇기 때문에 부모 요소의 width 값에 900px을 주어도 pixed 속성이 지정된 header 태그의 width는 900px이 아닌 viewport 기준인 100%가 된다. -->
@@ -14,23 +14,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- 해결 방법2 -->
-    <link href="./index2.css" rel="stylesheet" type="text/css" />
+    <link href="./absolute_max_width.css" rel="stylesheet" type="text/css" />
 
     <title>Document</title>
   </head>
   <body>
     <div class="body__container">
-      <div class="header__container">
-        <header id="header">
-          <a href=""><img src="" alt="" />Logo</a>
-          <ul>
-            <li>메뉴1</li>
-            <li>메뉴2</li>
-            <li>메뉴3</li>
-            <li>메뉴4</li>
-          </ul>
-        </header>
-      </div>
+      <header id="header">
+        <a href=""><img src="" alt="" />Logo</a>
+        <ul>
+          <li>메뉴1</li>
+          <li>메뉴2</li>
+          <li>메뉴3</li>
+          <li>메뉴4</li>
+        </ul>
+      </header>
       <div>
         <section class="menu1">Section1</section>
         <section class="menu2">Section2</section>
@@ -38,6 +36,12 @@
         <section class="menu4">Section4</section>
       </div>
       <footer id="footer">푸터</footer>
+
+      <div class="arrow__container">
+        <div class="arrow-up">
+          <button>위로</button>
+        </div>
+      </div>
     </div>
   </body>
 </html>
