@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="../common/js/includeHTML.js"></script>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../common/css/common.css" />
+    <script>
+      includeHTML("../header.html", "#header");
+      includeHTML("../footer.html", "#footer");
+    </script>
+
+    <title>HTML5 & CSS3</title>
+  </head>
+  <body>
+    <header id="header"></header>
+
+    <main id="content">
+      <!-- Emmet 설명 -->
+      <h3>Emmet 이란?</h3>
+      <span
+        >강력한 자동 완성 기능으로 HTML 작성을 빠르게 향상시켜주는
+        플러그인</span
+      >
+      <hr />
+
+      <!-- 구조화 방법 -->
+      <h2>구조화 하기 (Nesting operators)</h2>
+
+      <!-- 1. 자식 -->
+      <h4>자식 ></h4>
+      <span>div>ul>li</span>
+      <div>
+        <ul>
+          <li></li>
+        </ul>
+      </div>
+
+      <!-- 2. 형제: + -->
+      <!--  -->
+      <h4>형제 +</h4>
+      <span>div>ul+ol</span>
+      <div>
+        <ul></ul>
+        <ol></ol>
+      </div>
+
+      <!-- 반복: * -->
+      <!-- ul>li*5 -->
+      <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+
+      <!-- 중간에 상위에 추가하기 ^ -->
+      <!-- div>ul>li^ol -->
+      <div>
+        <ul>
+          <li></li>
+        </ul>
+        <ol></ol>
+      </div>
+
+      <!-- 그룹화하기 () -->
+      <!-- div>(header>ul>li*2>a)+footer>p -->
+      <div>
+        <header>
+          <ul>
+            <li><a href=""></a></li>
+            <li><a href=""></a></li>
+          </ul>
+        </header>
+        <footer>
+          <p></p>
+        </footer>
+      </div>
+
+      <!-- 텍스트 입력: {} -->
+      <!-- p{hello} -->
+      <p>hello</p>
+
+      <!-- 자동으로 숫자 할당: {$} -->
+      <!-- p.a${item$}*4 -->
+      <p class="abc1">item1</p>
+      <p class="abc2">item2</p>
+      <p class="abc3">item3</p>
+      <p class="abc4">item4</p>
+
+      <!-- lorem -->
+      <!-- p>lorem -->
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi quod
+        commodi quam, sit voluptas, ratione placeat officia libero nesciunt, sed
+        quo! Iusto nesciunt deserunt eum, rem ex explicabo sit maiores?
+      </p>
+      <!-- p>lorem4 -->
+      <p>Lorem ipsum dolor sit.</p>
+    </main>
+
+    <footer id="footer"></footer>
+  </body>
+</html>
+
+<!-- 
+  https://angelplayer.tistory.com/185
+  https://jineecode.tistory.com/103
+ -->
