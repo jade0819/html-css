@@ -83,6 +83,10 @@ hr {
   background-color: var(--color-dark-blue);
 }
 
+#header a {
+  color: var(--color-white);
+}
+
 #content {
   display: flex;
   flex-direction: column;
