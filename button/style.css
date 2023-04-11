@@ -1,0 +1,214 @@
+html,
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  /* background: #2c3e50; */
+}
+
+.btn {
+  appearance: none;
+  display: flex;
+  align-self: center;
+  margin: 20px;
+  padding: 1.2em 2.8em;
+  font-size: 1rem;
+  font-weight: 700;
+  text-align: center;
+  line-height: 1;
+  color: white;
+  background-color: transparent;
+  border-radius: 0.6em;
+  text-decoration: none;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.btn:hover {
+  color: white;
+}
+
+.first {
+  background-color: transparent;
+  border: 2px solid red;
+  color: red;
+  transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+}
+
+.first:hover {
+  box-shadow: 0 0 40px 40px red inset;
+}
+
+.second {
+  border: 2px solid greenyellow;
+  /* background: linear-gradient(greenyellow 50%, green 50%); */
+  background: linear-gradient(greenyellow 50%, green 50%);
+  background: -webkit-linear-gradient(greenyellow 50%, green 50%);
+  background: -moz-linear-gradient(greenyellow 50%, green 50%);
+  background-size: 100% 25%;
+  transition: background 350ms ease-in-out
+}
+
+.third {
+
+  border: 2px solid orange;
+  background: linear-gradient(90deg, yellow 50%, orange 50%);
+  background: -webkit-linear-gradient(0deg, yellow 50%, orange 50%);
+  background: -moz-linear-gradient(0deg, yellow 50%, orange 50%);
+  background-size: 10% 100%;
+  transition: background 350ms ease-in-out
+}
+
+.fourth {
+  border: 2px solid red;
+  background: linear-gradient(45deg,
+      red 25%, green 0,
+      green 50%, red 0,
+      red 75%, green 0);
+  -webkit-background-size: 30px 30px;
+  background-size: 30px 30px;
+  transition: background 350ms ease-in-out
+}
+
+.second:hover,
+.third:hover,
+.fourth:hover {
+  background-position: 100px;
+}
+
+.container {
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #2c3e50;
+}
+
+.fifth {
+  border: 2px solid #3498db;
+  box-shadow: 0 0 40px 40px #3498db inset, 0 0 0 0 #3498db;
+  transition: all 150ms ease-in-out;
+}
+
+.fifth:hover {
+  box-shadow: 0 0 10px 0 #3498db inset, 0 0 10px 4px #3498db;
+}
+
+.sixth {
+  border: 2px solid yellow;
+  background: linear-gradient(45deg, yellow 50%, transparent 50%);
+  background-position: 100%;
+  background-size: 400%;
+  transition: background 300ms ease-in-out;
+}
+
+.sixth:hover {
+  background-position: 0;
+}
+
+.seventh {
+  position: relative;
+  color: purple;
+  border: 2px solid purple;
+  overflow: hidden;
+  z-index: 1;
+  transition: color 200ms ease-in-out;
+}
+
+.seventh::after {
+  content: '';
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 100%;
+  background-color: purple;
+  z-index: -1;
+  transition: width 200ms ease-in-out;
+}
+
+.seventh:hover {
+  color: white;
+}
+
+.seventh:hover::after {
+  width: 110%;
+}
+
+.eighth {
+  color: goldenrod;
+  border: 2px solid goldenrod;
+  border-radius: 3em;
+  background-image: linear-gradient(to bottom, transparent 50%, goldenrod 50%);
+  background-position: 0% 0%;
+  transition: background 150ms ease-in-out, color 150ms ease-in-out;
+}
+
+.eighth:hover {
+  color: white;
+  background-position: 0 100%;
+}
+
+.ninth {
+  border: none;
+  background-image: linear-gradient(to top, #d9afd9 0%, #97d9e1 100%);
+}
+
+.tenth__wrap {
+  width: 100%;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(to top, #d9afd9 0%, #97d9e1 100%);
+}
+
+.button__inner {
+  display: flex;
+  flex-direction: column;
+}
+
+.tenth {
+  position: relative;
+  border: none;
+  border-radius: 0;
+  background-color: #222;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.20);
+  cursor: pointer;
+}
+
+.description {
+  font-size: 35px;
+  text-align: center;
+}
+
+.tenth span {
+  /* position: relative; */
+  z-index: 1;
+}
+
+
+.tenth::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 330%;
+  width: 130%;
+  background: #78c7d2;
+  transition: all .5s ease-in-out;
+  -webkit-transition: all .5s ease-in-out;
+  transform: translateX(-98%) translateY(-25%) rotate(45deg);
+  -webkit-transform: translateX(-98%) translateY(-25%) rotate(45deg);
+}
+
+.tenth:hover::after {
+  transform: translateX(-9%) translateY(-25%) rotate(45deg);
+  -webkit-transform: translateX(-9%) translateY(-25%) rotate(45deg);
+}
